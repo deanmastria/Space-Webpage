@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f0f0;
+    background-color: #4f9faf;
 }
 
 .container {
@@ -30,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(93, 194, 112);
     text-decoration: none;
     font-weight: bold;
 }

@@ -1,21 +1,23 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #000;
     color: #fff;
+    line-height: 1.6;
 }
 
+/* Header and Navigation */
 header {
-    background-color: #1a1a1a;
-    padding: 20px;
+    background: #111;
+    padding: 10px 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5em;
-    color: #f9a825;
 }
 
 nav ul {
@@ -29,71 +31,69 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
+/* Main Content */
 main {
     padding: 20px;
-    max-width: 1200px;
-    margin: auto;
 }
 
 main section {
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
-main h2 {
-    color: #f9a825;
+main section h2 {
     font-size: 2em;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
 }
 
-main img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
+main section p {
+    font-size: 1.2em;
 }
 
-footer {
-    background-color: #1a1a1a;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
+main section img {
     width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 2px solid #555;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
     bottom: 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #f9a825;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+    width: 100%;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 5px 0;
     }
 
-    main {
-        padding: 10px;
-    }
-
-    main h2 {
+    main section h2 {
         font-size: 1.5em;
+    }
+
+    main section p {
+        font-size: 1em;
+    }
+
+    main section img {
+        width: 100%;
+        margin-top: 10px;
     }
 }
